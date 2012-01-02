@@ -1,0 +1,39 @@
+{ "name":    "JSON"
+, "url":     "https://github.com/TODO"
+, "author":  "dj"
+, "version": "0.0.1"
+
+, "fileTypes": ["\\.json"]
+
+, "preferences":
+  { "tab": "  "
+  , "indent":
+    [ "[:]$"
+    ]
+  , "outdent":
+    [ "[}\\]]"
+    ]
+  }
+
+, "syntax":
+  { "$":
+    [ { "token": "string.literal"
+      , "begin": "\""
+      , "end":   "\""
+      , "include":
+        [ { "token": "string.escape"
+          , "match": "(?:\\\\[\\\\\"/bfnrt])|\\\\u[0-9a-f]{4}"
+          }
+        ]
+      }
+      
+    , { "token": "constant.builtin"
+      , "match": "true|false|null"
+      }
+    
+    , { "token": "constant.numeric"
+      , "match": "-?[0-9]+(?:\\.(?!\\.)[0-9]*)?(?:[eE][-+]?[0-9]*)?"
+      }
+    ]
+  }
+}
