@@ -1,6 +1,6 @@
 { "name":    "JSON"
-, "url":     "https://github.com/TODO"
-, "author":  "dj"
+, "url":     "https://sentientwaffle@github.com/stratuseditor/JSON.sebundle.git"
+, "author":  "sentientwaffle"
 , "version": "0.0.1"
 
 , "fileTypes": ["\\.json"]
